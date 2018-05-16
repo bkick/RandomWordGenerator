@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title></title>
+	{% load static %}
+
+</head>
+<body>
+	
+	<p>{{word}}</p>
+	<form action='/new' method='post'>
+	{% csrf_token %}
+		<button type='submit' value='New Word'>new word</button>
+	</form>
+</body>
+</html>
